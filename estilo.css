@@ -1,6 +1,8 @@
 /*CARAC GENERALES*/
 
-
+body{
+    background: linear-gradient(to bottom, rgb(206, 164, 87), white);
+}
 
 .logo{
     filter: brightness(1.1);
