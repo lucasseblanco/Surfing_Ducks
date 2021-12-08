@@ -1,0 +1,428 @@
+/*CARAC GENERALES*/
+
+body{
+    background: linear-gradient(to bottom, rgb(206, 164, 87), white);
+}
+
+.logo{
+    filter: brightness(1.1);
+        mix-blend-mode: multiply;
+}
+    
+.redesSociales{
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+}
+
+#lista ul {
+    list-style: none;
+    text-align: center;
+    float: right;
+    font: 20px sans-serif;
+}
+
+#lista ul li{
+    margin-right: 10px;
+    display: inline;
+    font: 90% sans-serif;
+    padding: 3px;
+}
+
+#lista ul li a{
+    color: rgb(31, 75, 23);
+    text-decoration: none;
+}
+
+
+
+
+
+p {
+    font-family: sans-serif;
+    color: rgb(31, 75, 23);
+    padding: 3px;
+}
+
+
+/*Index*/
+
+.surfistaIcono{
+    height: 300px;
+    width: 1430px;
+    padding-bottom: 20px;
+}
+
+
+.mapa{
+    float: right;
+    width: 430px;
+    height: 140%;
+    
+}
+
+.parrafoIndex{
+    clear: both;
+    text-align: center;
+    font: 110% sans-serif;
+    display: inline;
+    color: rgb(31, 75, 23);
+    padding: 3px;
+}
+
+
+
+/*PAGINA RESERVAS*/
+
+.gridReservas{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: 
+"seccion1 seccion2 seccion3"
+"seccion1 seccion2 seccion3"
+"seccion4 seccion5 seccion6"
+"seccion4 seccion5 seccion6";
+
+
+column-gap: 15%;
+
+
+justify-items: center;
+align-items: center;
+}
+
+#seccionUno{
+grid-area: seccion1;
+width: 100%;
+height: 350px;
+}
+
+#seccionUno li{
+    list-style: none;
+    font: sans-serif;
+}
+
+
+#seccionUno a {
+    color: rgb(31, 75, 23);
+    text-decoration: none;
+}
+
+#seccionUno a p {
+    font: sans-serif;
+}
+
+#seccionUno a:hover{
+    color: gray;
+}
+
+
+#seccionDos{
+    grid-area: seccion2;
+    width: 100%;
+    height: 350px;
+}
+
+#seccionDos li{
+    list-style: none;
+}
+
+
+#seccionDos a {
+    color: rgb(31, 75, 23);
+    text-decoration: none;
+}
+
+#seccionDos a p {
+    font: sans-serif;
+}
+
+#seccionDos a:hover{
+    color: gray;
+}
+
+
+
+#seccionTres{
+        grid-area: seccion3;
+        width: 100%;
+        height: 350px;
+}
+
+#seccionTres li{
+    list-style: none;
+}
+
+
+#seccionTres a {
+    color: rgb(31, 75, 23);
+    text-decoration: none;
+}
+
+#seccionTres a p {
+    font: sans-serif;
+}
+
+#seccionTres a:hover{
+    color: gray;
+}
+
+#seccionCuatro{
+        grid-area: seccion4;
+        width: 100%;
+        height: 100%;
+}
+
+#seccionCuatro li{
+    list-style: none;
+}
+
+
+#seccionCuatro a {
+    color: rgb(31, 75, 23);
+    text-decoration: none;
+}
+
+#seccionCuatro a p {
+    font: sans-serif;
+}
+
+#seccionCuatro a:hover{
+    color: gray;
+}
+
+
+#seccionCinco{
+        grid-area: seccion5;
+        width: 100%;
+        height: 100%;
+}
+
+#seccionCinco li{
+    list-style: none;
+}
+
+
+#seccionCinco a {
+    color: rgb(31, 75, 23);
+    text-decoration: none;
+}
+
+#seccionCinco a p {
+    font: sans-serif;
+}
+
+#seccionCinco a:hover{
+    color: gray;
+}
+
+
+
+#seccionSeis{
+    grid-area: seccion6;
+    width: 100%;
+    height: 100%;
+}
+
+#seccionSeis li{
+    list-style: none;
+}
+
+
+#seccionSeis a {
+    color: rgb(31, 75, 23);
+    text-decoration: none;
+}
+
+#seccionSeis a p {
+    font: sans-serif;
+}
+
+#seccionSeis a:hover{
+    color: gray;
+}
+
+
+
+/*
+Pagina trips
+*/
+
+.infoTrips{
+    padding-top: 1%;
+    text-align: center;
+    color: rgb(31, 75, 23);
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+
+.surfTripVideo {
+    width: 50%;
+    height: 300px;
+    float: center;
+    display: inline;
+    text-align: center;
+    padding-left: 25%;
+    padding-top: 2%;
+}
+
+
+
+/*Pagina contacto*/
+
+form{
+    width: 400px;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    background: linear-gradient(to bottom, rgb(207, 179, 126), rgb(190,160,110));
+}
+
+form h2{
+    padding-top: 200px;
+    text-align: center;
+    font-size: 20px;
+    font: sans-serif;
+    padding: 1px;
+    color: rgb(31, 75, 23);
+}
+
+form h3{
+    font: sans-serif;
+    font-size: 15px;
+    margin-bottom: 1%;
+    color: rgb(31, 75, 23);
+}
+
+form h4 {
+    font: sans-serif;
+    font-size: 15px;
+    font: sans-serif;
+    padding: 1px;
+    color: rgb(31, 75, 23);
+}
+
+.infoUser{
+    width: 300px;
+    background: rgb(185, 185, 185);
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f1f1f;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.consulta{
+        width: 323px;
+        background: rgb(185, 185, 185);
+        padding: 12px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f1f1f;
+        font-family: sans-serif;
+        font-size: 18px;
+    
+}
+
+.bottons{
+    width: 98%;
+    background: #797979;
+    border: none;
+    padding: 15px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+
+/*
+FOOTER  
+*/
+
+.footer{
+    float: center;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.footer .derechosReservados{
+    font-size: 10px;
+    color: rgb(31, 75, 23);
+}
+
+/*
+PAGINA TUTORIALES
+*/
+
+.gridTutoriales{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: 
+"seccion1 seccion2 seccion3"
+"seccion1 seccion2 seccion3"
+"seccion4 seccion5 seccion6"
+"seccion4 seccion5 seccion6";
+font-family: sans-serif;
+
+
+column-gap: 10%;
+row-gap: 30px;
+
+justify-items: center;
+align-items: center;
+}
+
+#seccionUnoT{
+grid-area: seccion1;
+width: 100%;
+height: 350px;
+}
+
+
+#seccionDosT{
+    grid-area: seccion2;
+    width: 100%;
+    height: 350px;
+}
+
+
+#seccionTresT{
+    grid-area: seccion3;
+    width: 100%;
+    height: 350px;
+}
+
+
+.videoTutorialAlto{
+    height: 250px;
+}
+
+.videoTutorialBajo{
+    height: 250px;
+}
+
+#seccionCuatroT{
+    grid-area: seccion4;
+    width: 100%;
+    height: 100%;
+}
+
+
+#seccionCincoT{
+    grid-area: seccion5;
+    width: 100%;
+    height: 100%;
+}
+
+
+#seccionSeisT{
+    grid-area: seccion6;
+    width: 100%;
+    height: 100%;
+}
