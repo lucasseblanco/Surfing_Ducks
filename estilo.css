@@ -1,4 +1,5 @@
-/*CARAC GENERALES*/
+
+/*CARACTERISTICAS GENERALES*/
 
 body{
     background: linear-gradient(to bottom, rgb(206, 164, 87), white);
@@ -14,49 +15,54 @@ body{
         mix-blend-mode: multiply;
 }
 
-#lista ul {
-    list-style: none;
-    text-align: center;
-    float: right;
-    font: 20px sans-serif;
-}
-
-#lista ul li{
-    margin-right: 10px;
-    display: inline;
-    font: 90% sans-serif;
-    padding: 3px;
-}
-
-#lista ul li a{
-    color: rgb(31, 75, 23);
-    text-decoration: none;
-}
-
-
-
-
-
 p {
     font-family: sans-serif;
     color: rgb(31, 75, 23);
     padding: 3px;
 }
 
+#gridGeneral {
+    display: grid;
+    grid-template-rows: 200px 300px 100px;
+    grid-template-areas: 
+"area1 area1 area1 area1"
+"area2 area2 area2 area2"
+"area3 area3 area3 area3";
+background: linear-gradient(to bottom, rgb(206, 164, 87), white);
+width: 100%;
+}
 
-/*Index*/
-
-.surfistaIcono{
-    height: 300px;
-    width: 1430px;
-    padding-bottom: 20px;
+#cuerpoSeccionUno{
+    
+    grid-area: area1;
+    width: 100%;
 }
 
 
-.mapa{
+
+#cuerpoSeccionDos{
+    grid-area: area2;
+    width: 100%;
+}
+
+
+#footerSeccionTres{
+    grid-area: area3;
+    width: 100%;
+}
+
+/*Index*/
+
+#surfistaIcono{
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+#mapa{
     float: right;
     width: 430px;
-    height: 140%;
+    height: 80%;
     
 }
 
@@ -70,8 +76,6 @@ p {
 }
 
 
-
-/*PAGINA RESERVAS*/
 
 .gridReservas{
     display: grid;
@@ -248,23 +252,32 @@ height: 350px;
 Pagina trips
 */
 
-.infoTrips{
-    padding-top: 1%;
-    text-align: center;
-    color: rgb(31, 75, 23);
-    font-size: 100%;
-    font-family: sans-serif;
+.surfTripVideo{
+    float: right;
+    width: 430px;
+    height: 80%;
+    
 }
 
+.culturaPlayaTitulo{
+    color: rgb(31, 75, 23);
+    padding: 3px;
+    padding-bottom: 50px;
+}
 
-.surfTripVideo {
-    width: 50%;
-    height: 300px;
-    float: center;
-    display: inline;
+.infoTrips{
+    clear: both;
     text-align: center;
-    padding-left: 25%;
-    padding-top: 2%;
+    font: 110% sans-serif;
+    display: inline;
+    color: rgb(31, 75, 23);
+    padding: 3px;
+}
+
+.atardecerPageTrip {
+    width: 100%;
+    height: 90%;
+    padding-bottom: 20px;
 }
 
 
@@ -273,40 +286,39 @@ Pagina trips
 
 form{
     width: 400px;
-    box-sizing: border-box;
     padding: 30px;
     margin: auto;
     border-radius: 4px;
     font-family: sans-serif;
-    padding-bottom: 10px;
-    background: linear-gradient(to bottom, rgb(207, 179, 126), rgb(190,160,110));
+    padding-bottom: 3px;
 }
 
 form h2{
-    padding-top: 200px;
+    padding-top: 100px;
     text-align: center;
     font-size: 20px;
     font: sans-serif;
     padding: 1px;
     color: rgb(31, 75, 23);
+    padding-bottom: 20px;
 }
 
 form h3{
     font: sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 1%;
     color: rgb(31, 75, 23);
 }
 
 form h4 {
     font: sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font: sans-serif;
     padding: 1px;
     color: rgb(31, 75, 23);
 }
 
-.infoUser{
+.form-control{
     width: 300px;
     background: rgb(185, 185, 185);
     padding: 12px;
@@ -326,43 +338,29 @@ form h4 {
         border: 1px solid #1f1f1f;
         font-family: sans-serif;
         font-size: 18px;
-    
+        padding-bottom: 10px;
 }
 
 .bottons{
     width: 98%;
-    background: #797979;
+    background: rgb(31, 75, 23);
     border: none;
     padding: 15px;
-    color: white;
+    color: rgb(255, 254, 254);
     margin: 16px 0;
     font-size: 16px;
+    padding-top: 10px;
 }
 
-
-/*
-FOOTER  
-*/
-
-.footer{
-    float: center;
-    padding-top: 100px;
-    text-align: center;
-}
-
-.footer .derechosReservados{
-    font-size: 10px;
-    color: rgb(31, 75, 23);
-}
 
 /*
 PAGINA TUTORIALES
 */
 
-.gridTutoriales{
+#gridTutoriales{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 100px 100px 100px;
     grid-template-areas: 
 "seccion1 seccion2 seccion3"
 "seccion1 seccion2 seccion3"
@@ -370,46 +368,38 @@ PAGINA TUTORIALES
 "seccion4 seccion5 seccion6";
 font-family: sans-serif;
 
-
 column-gap: 10%;
 row-gap: 30px;
 
 justify-items: center;
 align-items: center;
+
 }
 
 #seccionUnoT{
 grid-area: seccion1;
-width: 100%;
-height: 350px;
+width: 90%;
+height: 100%;
 }
 
 
 #seccionDosT{
     grid-area: seccion2;
     width: 100%;
-    height: 350px;
+    height: 100%;
 }
 
 
 #seccionTresT{
     grid-area: seccion3;
     width: 100%;
-    height: 350px;
+    height: 100%;
 }
 
-
-.videoTutorialAlto{
-    height: 250px;
-}
-
-.videoTutorialBajo{
-    height: 250px;
-}
 
 #seccionCuatroT{
     grid-area: seccion4;
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 
@@ -425,4 +415,355 @@ height: 350px;
     grid-area: seccion6;
     width: 100%;
     height: 100%;
+}
+
+
+@media only screen and (max-width: 600px){
+
+
+.surfTripVideo{
+    float: right;
+    width: 430px;
+    height: 50%;
+    
+}
+    
+    .infoTrips{
+        text-align: center;
+        font: 60% sans-serif;
+        display: inline;
+        color: rgb(31, 75, 23);
+        padding: 3px;
+    }
+
+    .culturaPlayaTitulo{
+        color: rgb(31, 75, 23);
+        padding: 3px;
+        padding-bottom: 20px;
+    }
+    
+    nav ul li{
+        font: 90% sans-serif;
+        padding: 3px;
+        float: right;
+        list-style: none;
+    }
+    
+    nav ul li a{
+        color: rgb(31, 75, 23);
+        text-decoration: none;
+        float: right;
+        list-style: none;
+    }
+
+    footer {
+        float: center;
+        padding-top: 150px;
+        text-align: center;
+    }
+    
+    footer .redesSociales{
+        float: center;
+        text-align:end;
+        height: 40%;
+        width: 40%;
+    }
+    
+    footer .derechosReservados{
+        font-size: 10px;
+        color: rgb(31, 75, 23);
+    
+    }
+    #mapa{
+        width: 50%;
+        height: 50%;
+        
+    }
+
+    .parrafoIndex{
+        font: 50% sans-serif;
+        color: rgb(31, 75, 23);
+    }
+.logo{
+    height: 70px;
+    position: inherit;
+}
+
+#gridTutoriales{
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: 90px 90px 90px;
+    grid-template-areas: 
+"seccion1 seccion1 seccion2 seccion2"
+"seccion3 seccion3 seccion4 seccion4"
+"seccion5 seccion5 seccion6 seccion6";
+font-family: sans-serif;
+
+column-gap: 10%;
+row-gap: 30px;
+
+justify-items: center;
+align-items: center;
+
+}
+
+#seccionUnoT{
+    grid-area: seccion1;
+    width: 100%;
+    height: 100%;
+    }
+    
+    
+    #seccionDosT{
+        grid-area: seccion2;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    #seccionTresT{
+        grid-area: seccion3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    #seccionCuatroT{
+        grid-area: seccion4;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    #seccionCincoT{
+        grid-area: seccion5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    #seccionSeisT{
+        grid-area: seccion6;
+        width: 100%;
+        height: 100%;
+    }
+
+.parrafoTutoriales {
+    font-size: 100%;
+}
+
+.videoTutorial {
+    height: 70%;
+    width: 70%;
+}
+
+/*Pagina contacto*/
+
+form{
+    width: 170px;
+    padding:5px;
+    margin: auto;
+    border-radius: 1px;
+    font-family: sans-serif;
+}
+
+form h2{
+    padding-top: 50px;
+    text-align: left;
+    font-size: 10px;
+    font: sans-serif;
+    padding: 1px;
+    color: rgb(31, 75, 23);
+    padding-bottom: 10px;
+}
+
+form h3{
+    font: sans-serif;
+    font-size: 8px;
+    margin-bottom: 1%;
+    color: rgb(31, 75, 23);
+}
+
+form h4 {
+    font: sans-serif;
+    font-size: 8px;
+    font: sans-serif;
+    padding: 1px;
+    color: rgb(31, 75, 23);
+}
+
+.form-control{
+    width: 150px;
+    background: rgb(185, 185, 185);
+    padding: 3px;
+    border-radius: 1px;
+    margin-bottom: 4px;
+    border: 1px solid #1f1f1f;
+    font-family: sans-serif;
+    font-size: 9px;
+}
+
+.consulta{
+    width: 150px;
+    background: rgb(185, 185, 185);
+    padding: 3px;
+    border-radius: 1px;
+    margin-bottom: 4px;
+    border: 1px solid #1f1f1f;
+    font-family: sans-serif;
+    font-size: 9px;
+    
+}
+
+.bottons{
+    width: 150px;
+    background: rgb(31, 75, 23);
+    border: none;
+    padding: 8px;
+    color: rgb(255, 254, 254);
+    margin: 8px 0;
+    font-size: 8px;
+    padding-top: 5px;
+}
+
+.checkbox {
+    color:  rgb(31, 75, 23);
+    font-size: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#imagenContacto{
+    height: auto;
+    width: 100%;
+}
+
+
+}
+
+@media only screen and (min-width:600px){
+    nav ul {
+        list-style: none;
+        text-align: center;
+        float: right;
+        font: 20px sans-serif;
+    }
+    
+    nav ul li{
+        margin-right: 10px;
+        display: inline;
+        font: 90% sans-serif;
+        padding: 3px;
+    }
+    
+    nav ul li a{
+        color: rgb(31, 75, 23);
+        text-decoration: none;
+    }
+
+        footer {
+            float: center;
+            padding-top: 300px;
+            text-align: center;
+        }
+        
+        footer .redesSociales{
+            float: center;
+            padding-top: 150px;
+            text-align:end;
+        }
+        
+        footer .derechosReservados{
+            font-size: 10px;
+            color: rgb(31, 75, 23);
+        }
+
+        /*Pagina contacto*/
+
+form{
+    width: auto;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: sans-serif;
+    padding-bottom: 3px;
+    height: auto;
+    float: right;
+}
+
+form h2{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 18px;
+    font: sans-serif;
+    padding: 1px;
+    color: rgb(31, 75, 23);
+    padding-bottom: 20px;
+}
+
+form h3{
+    font: sans-serif;
+    font-size: 14px;
+    margin-bottom: 1%;
+    color: rgb(31, 75, 23);
+    padding-bottom: 4px;
+}
+
+form h4 {
+    font: sans-serif;
+    font-size: 14px;
+    font: sans-serif;
+    padding: 1px;
+    color: rgb(31, 75, 23);
+}
+
+.form-control{
+    width: 300px;
+    background: rgb(185, 185, 185);
+    padding: 3px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f1f1f;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.consulta{
+        width: 300px;
+        background: rgb(185, 185, 185);
+        padding: 12px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f1f1f;
+        font-family: sans-serif;
+        font-size: 16px;
+        padding-bottom: 10px;
+    
+}
+
+.bottons{
+    width: 98%;
+    background: rgb(31, 75, 23);
+    border: none;
+    padding: 10px;
+    color: rgb(255, 254, 254);
+    margin: 16px 0;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.checkbox {
+    color:  rgb(31, 75, 23);
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#imagenContacto{
+    height: 500px;
+    max-width: 70%;
+    width: 70%;
+}
+
+
 }
