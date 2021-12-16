@@ -10,6 +10,10 @@
         mix-blend-mode: multiply;
 }
 
+.body {
+    background:no-repeat ;
+}
+
 p {
     font-family: sans-serif;
     color: rgb(31, 75, 23);
