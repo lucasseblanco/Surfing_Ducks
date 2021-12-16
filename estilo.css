@@ -1,9 +1,4 @@
-
 /*CARACTERISTICAS GENERALES*/
-
-body{
-    background: linear-gradient(to bottom, rgb(206, 164, 87), white);
-}
 
 .logo{
     filter: brightness(1.1);
@@ -13,6 +8,10 @@ body{
 .redesSociales{
         filter: brightness(1.1);
         mix-blend-mode: multiply;
+}
+
+.body {
+    background:no-repeat ;
 }
 
 p {
@@ -767,3 +766,4 @@ form h4 {
 
 
 }
+
