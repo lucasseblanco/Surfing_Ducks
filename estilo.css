@@ -10,10 +10,6 @@
         mix-blend-mode: multiply;
 }
 
-.body {
-    background:no-repeat ;
-}
-
 p {
     font-family: sans-serif;
     color: rgb(31, 75, 23);
@@ -76,177 +72,6 @@ width: 100%;
 
 
 
-.gridReservas{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-areas: 
-"seccion1 seccion2 seccion3"
-"seccion1 seccion2 seccion3"
-"seccion4 seccion5 seccion6"
-"seccion4 seccion5 seccion6";
-
-
-column-gap: 15%;
-
-
-justify-items: center;
-align-items: center;
-}
-
-#seccionUno{
-grid-area: seccion1;
-width: 100%;
-height: 350px;
-}
-
-#seccionUno li{
-    list-style: none;
-    font: sans-serif;
-}
-
-
-#seccionUno a {
-    color: rgb(31, 75, 23);
-    text-decoration: none;
-}
-
-#seccionUno a p {
-    font: sans-serif;
-}
-
-#seccionUno a:hover{
-    color: gray;
-}
-
-
-#seccionDos{
-    grid-area: seccion2;
-    width: 100%;
-    height: 350px;
-}
-
-#seccionDos li{
-    list-style: none;
-}
-
-
-#seccionDos a {
-    color: rgb(31, 75, 23);
-    text-decoration: none;
-}
-
-#seccionDos a p {
-    font: sans-serif;
-}
-
-#seccionDos a:hover{
-    color: gray;
-}
-
-
-
-#seccionTres{
-        grid-area: seccion3;
-        width: 100%;
-        height: 350px;
-}
-
-#seccionTres li{
-    list-style: none;
-}
-
-
-#seccionTres a {
-    color: rgb(31, 75, 23);
-    text-decoration: none;
-}
-
-#seccionTres a p {
-    font: sans-serif;
-}
-
-#seccionTres a:hover{
-    color: gray;
-}
-
-#seccionCuatro{
-        grid-area: seccion4;
-        width: 100%;
-        height: 100%;
-}
-
-#seccionCuatro li{
-    list-style: none;
-}
-
-
-#seccionCuatro a {
-    color: rgb(31, 75, 23);
-    text-decoration: none;
-}
-
-#seccionCuatro a p {
-    font: sans-serif;
-}
-
-#seccionCuatro a:hover{
-    color: gray;
-}
-
-
-#seccionCinco{
-        grid-area: seccion5;
-        width: 100%;
-        height: 100%;
-}
-
-#seccionCinco li{
-    list-style: none;
-}
-
-
-#seccionCinco a {
-    color: rgb(31, 75, 23);
-    text-decoration: none;
-}
-
-#seccionCinco a p {
-    font: sans-serif;
-}
-
-#seccionCinco a:hover{
-    color: gray;
-}
-
-
-
-#seccionSeis{
-    grid-area: seccion6;
-    width: 100%;
-    height: 100%;
-}
-
-#seccionSeis li{
-    list-style: none;
-}
-
-
-#seccionSeis a {
-    color: rgb(31, 75, 23);
-    text-decoration: none;
-}
-
-#seccionSeis a p {
-    font: sans-serif;
-}
-
-#seccionSeis a:hover{
-    color: gray;
-}
-
-
-
 /*
 Pagina trips
 */
@@ -255,7 +80,7 @@ Pagina trips
     float: right;
     width: 430px;
     height: 80%;
-    
+    border: 3px solid;
 }
 
 .culturaPlayaTitulo{
@@ -351,12 +176,19 @@ form h4 {
     padding-top: 10px;
 }
 
+.bottons:hover{
+    background: rgb(185, 185, 185);
+    width: 98%;
+    color: rgb(31, 75, 23);
+
+}
 
 /*
 PAGINA TUTORIALES
 */
 
-#gridTutoriales{
+
+#gridTutoriales {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 100px 100px 100px;
@@ -417,13 +249,25 @@ height: 100%;
 }
 
 
+.imagenReserva {
+    border: 3px solid;
+}
+
+.parrafoReservas:focus {
+    width: 200px;
+}
+
+
+
+
 @media only screen and (max-width: 600px){
 
 
 .surfTripVideo{
     float: right;
-    width: 430px;
-    height: 50%;
+    width: 300px;
+    height: 45%;
+    border: 3px solid;
     
 }
     
@@ -487,6 +331,8 @@ height: 100%;
     height: 70px;
     position: inherit;
 }
+
+/*Pagina Tutoriales*/
 
 #gridTutoriales{
     display: grid;
@@ -554,6 +400,183 @@ align-items: center;
 .videoTutorial {
     height: 70%;
     width: 70%;
+}
+
+/*Pagina Reservas*/
+#gridReservas{
+display: grid;
+grid-template-columns: 90px 90px 90px;
+grid-template-rows: 90px 90px 90px;
+grid-template-areas: 
+"seccion1 seccion1 seccion2 seccion2"
+"seccion3 seccion3 seccion4 seccion4"
+"seccion5 seccion5 seccion6 seccion6";
+font-family: sans-serif;
+
+column-gap: 10%;
+row-gap: 30px;
+
+justify-items: center;
+align-items: center;
+
+}
+
+#seccionUno{
+    grid-area: seccion1;
+    width: 100%;
+    height: 100%;
+    }
+    #seccionUno li{
+        list-style: none;
+    }
+    
+    
+    #seccionUno a {
+        color: rgb(31, 75, 23);
+        text-decoration: none;
+    }
+    
+    #seccionUno a p {
+        font: sans-serif;
+    }
+    
+    #seccionUno a:hover{
+        color: gray;
+    }
+    
+    
+    #seccionDos{
+        grid-area: seccion2;
+        width: 100%;
+        height: 100%;
+    }
+    #seccionDos li{
+        list-style: none;
+    }
+    
+    
+    #seccionDos a {
+        color: rgb(31, 75, 23);
+        text-decoration: none;
+    }
+    
+    #seccionDos a p {
+        font: sans-serif;
+    }
+    
+    #seccionDos a:hover{
+        color: gray;
+    }
+    
+    #seccionTres{
+        grid-area: seccion3;
+        width: 100%;
+        height: 100%;
+    }
+
+    #seccionTres li{
+        list-style: none;
+    }
+    
+    
+    #seccionTres a {
+        color: rgb(31, 75, 23);
+        text-decoration: none;
+    }
+    
+    #seccionTres a p {
+        font: sans-serif;
+    }
+    
+    #seccionTres a:hover{
+        color: gray;
+    }
+    
+    
+    #seccionCuatro{
+        grid-area: seccion4;
+        width: 100%;
+        height: 100%;
+    }
+
+    #seccionCuatro li{
+        list-style: none;
+    }
+    
+    
+    #seccionCuatro a {
+        color: rgb(31, 75, 23);
+        text-decoration: none;
+    }
+    
+    #seccionCuatro a p {
+        font: sans-serif;
+    }
+    
+    #seccionCuatro a:hover{
+        color: gray;
+    }
+    
+    
+    #seccionCinco{
+        grid-area: seccion5;
+        width: 100%;
+        height: 100%;
+    }
+
+    #seccionCinco li{
+        list-style: none;
+    }
+    
+    
+    #seccionCinco a {
+        color: rgb(31, 75, 23);
+        text-decoration: none;
+    }
+    
+    #seccionCinco a p {
+        font: sans-serif;
+    }
+    
+    #seccionCinco a:hover{
+        color: gray;
+    }
+    
+    
+    #seccionSeis{
+        grid-area: seccion6;
+        width: 100%;
+        height: 100%;
+    }
+    #seccionSeis li{
+        list-style: none;
+    }
+    
+    
+    #seccionSeis a {
+        color: rgb(31, 75, 23);
+        text-decoration: none;
+    }
+    
+    #seccionSeis a p {
+        font: sans-serif;
+    }
+    
+    #seccionSeis a:hover{
+        color: gray;
+    }
+
+.parrafoReservas {
+    padding-top: 1px;
+    font-size: 70%;
+}
+
+
+
+
+.imagenReserva{
+    height: 80%;
+    width: 80%;
 }
 
 /*Pagina contacto*/
@@ -637,8 +660,10 @@ form h4 {
     width: 100%;
 }
 
-
 }
+
+
+
 
 @media only screen and (min-width:600px){
     nav ul {
@@ -764,6 +789,179 @@ form h4 {
     width: 70%;
 }
 
+/*Pagina Reservas*/
+
+#gridReservas{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: 
+"seccion1 seccion2 seccion3"
+"seccion1 seccion2 seccion3"
+"seccion4 seccion5 seccion6"
+"seccion4 seccion5 seccion6";
+
+
+column-gap: 10%;
+row-gap: 30px;
+
+justify-items: center;
+align-items: center;
+}
+
+#seccionUno{
+    grid-area: seccion1;
+    width: 100%;
+    height: 300px;
+    }
+    
+    #seccionUno li{
+        list-style: none;
+        font: sans-serif;
+    }
+    
+    
+    #seccionUno a {
+        color: rgb(31, 75, 23);
+        text-decoration: none;
+    }
+    
+    #seccionUno a p {
+        font: sans-serif;
+    }
+    
+    #seccionUno a:hover{
+        color: gray;
+    }
+    
+    
+    #seccionDos{
+        grid-area: seccion2;
+        width: 100%;
+        height: 300px;
+    }
+    
+    #seccionDos li{
+        list-style: none;
+    }
+    
+    
+    #seccionDos a {
+        color: rgb(31, 75, 23);
+        text-decoration: none;
+    }
+    
+    #seccionDos a p {
+        font: sans-serif;
+    }
+    
+    #seccionDos a:hover{
+        color: gray;
+    }
+    
+    
+    
+    #seccionTres{
+            grid-area: seccion3;
+            width: 100%;
+            height: 300px;
+    }
+    
+    #seccionTres li{
+        list-style: none;
+    }
+    
+    
+    #seccionTres a {
+        text-decoration: none;
+    }
+
+
+    
+    #seccionTres a:focus{
+        color: gray;
+    }
+    
+    #seccionCuatro{
+            grid-area: seccion4;
+            width: 100%;
+            height: 100%;
+    }
+    
+    #seccionCuatro li{
+        list-style: none;
+    }
+    
+    
+    #seccionCuatro a {
+        color: rgb(31, 75, 23);
+        text-decoration: none;
+    }
+    
+    #seccionCuatro a p {
+        font: sans-serif;
+    }
+    
+    #seccionCuatro a:hover{
+        color: gray;
+    }
+    
+    
+    #seccionCinco{
+            grid-area: seccion5;
+            width: 100%;
+            height: 100%;
+    }
+    
+    #seccionCinco li{
+        list-style: none;
+    }
+    
+    
+    #seccionCinco a {
+        color: rgb(31, 75, 23);
+        text-decoration: none;
+    }
+    
+    #seccionCinco a p {
+        font: sans-serif;
+    }
+    
+    #seccionCinco a:hover{
+        color: gray;
+    }
+    
+    
+    
+    #seccionSeis{
+        grid-area: seccion6;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #seccionSeis li{
+        list-style: none;
+    }
+    
+    
+    #seccionSeis a {
+        color: rgb(31, 75, 23);
+        text-decoration: none;
+    }
+    
+    #seccionSeis a p {
+        font: sans-serif;
+    }
+    
+    #seccionSeis a:hover{
+        color: gray;
+    }    
+
+    .imagenReserva{
+        height: 200px;
+        width: 300px;
+    }
 
 }
+
 
