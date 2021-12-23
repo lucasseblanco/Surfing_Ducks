@@ -1,0 +1,145 @@
+.logo{
+  filter: brightness(1.1);
+      mix-blend-mode: multiply;
+}
+  
+.redesSociales{
+      filter: brightness(1.1);
+      mix-blend-mode: multiply;
+}
+
+p {
+  font-family: sans-serif;
+  color: rgb(31, 75, 23);
+  padding: 3px;
+}
+
+#gridGeneral {
+  display: grid;
+  grid-template-rows: 200px 300px 100px;
+  grid-template-areas: 
+"area1 area1 area1 area1"
+"area2 area2 area2 area2"
+"area3 area3 area3 area3";
+background: linear-gradient(to bottom, rgb(206, 164, 87), white);
+width: 100%;
+}
+
+#cuerpoSeccionUno{
+  
+  grid-area: area1;
+  width: 100%;
+}
+
+
+
+#cuerpoSeccionDos{
+  grid-area: area2;
+  width: 100%;
+}
+
+
+#footerSeccionTres{
+  grid-area: area3;
+  width: 100%;
+}
+
+/*Index*/
+
+#surfistaIcono{
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+#mapa{
+  float: right;
+  width: 430px;
+  height: 80%;
+  
+}
+
+.parrafoIndex{
+  clear: both;
+  text-align: center;
+  font: 110% sans-serif;
+  display: inline;
+  color: rgb(31, 75, 23);
+  padding: 3px;
+}
+
+@media only screen and (min-width: 600px) {
+  nav ul {
+    list-style: none;
+    text-align: center;
+    float: right;
+    font: 20px sans-serif;
+  }
+  nav ul li {
+    margin-right: 10px;
+    display: inline;
+    font: 90% sans-serif;
+    padding: 3px;
+  }
+  nav ul li a {
+    color: #1f4b17;
+    text-decoration: none;
+  }
+  footer {
+    float: center;
+    padding-top: 300px;
+    text-align: center;
+  }
+  footer .redesSociales {
+    float: center;
+    padding-top: 150px;
+    text-align: end;
+  }
+  footer .derechosReservados {
+    font-size: 10px;
+    color: #1f4b17;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul li {
+    font: 90% sans-serif;
+    padding: 3px;
+    float: right;
+    list-style: none;
+  }
+  nav ul li a {
+    color: #1f4b17;
+    text-decoration: none;
+    float: right;
+    list-style: none;
+  }
+  footer {
+    float: center;
+    padding-top: 150px;
+    text-align: center;
+  }
+  footer .redesSociales {
+    float: center;
+    text-align: end;
+    height: 40%;
+    width: 40%;
+  }
+  footer .derechosReservados {
+    font-size: 10px;
+    color: #1f4b17;
+  }
+  #mapa {
+    width: 50%;
+    height: 50%;
+  }
+  .parrafoIndex {
+    font: 50% sans-serif;
+    color: #1f4b17;
+  }
+  .logo {
+    height: 70px;
+    position: inherit;
+  }
+}
+/*# sourceMappingURL=Sass.css.map */
